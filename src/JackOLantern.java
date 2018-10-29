@@ -22,4 +22,18 @@ public class JackOLantern {
             }
         }
     }
+
+    public String toString()
+    {
+        String printStr = "";
+        for (String[] col : faceFeatures)
+        {
+            for (String str : col)
+            {
+                printStr += str;
+            }
+            printStr += "\n";
+        }
+        return printStr;
+    }
 }
